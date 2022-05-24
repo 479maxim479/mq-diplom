@@ -64,7 +64,7 @@ a {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -155,13 +155,31 @@ a {
   }
 
   .welcome-title {
-    width: 55%;
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (max-width: 640px) {
   .header-menu {
     display: none;
+  }
+
+  .menu-burger-header {
+    display: flex;
+  }
+
+  .logo-link {
+    display: block;
+    margin: auto;
+    margin-top: 135px;
+  }
+
+  .welcome-title {
+    font-size: 7vw;
+    line-height: 40px;
+    margin-top: 30px;
   }
 }
 
@@ -298,10 +316,6 @@ a {
     display: flex;
     flex-direction: column;
   }
-
-  .trend-item: {
-    width: 100%;
-  }
 }
 
 /*=============MAIN NEWS=============*/
@@ -312,7 +326,7 @@ a {
 }
 
 .main-news {
-  width: 64.8%;
+  max-width: 780px;
 }
 
 .article {
@@ -324,7 +338,7 @@ a {
 }
 
 .article-img {
-  width: 380px;
+  max-width: 100%;
   margin-right: 30px;
 }
 
@@ -399,9 +413,46 @@ a {
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
+  .article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    margin-left: 35px;
+  }
 }
 
 @media (max-width: 640px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-news {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .article {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .article-img {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .article-wrapper {
+    width: 100%;
+  }
+
+  .sidebar {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*=============ASIDE================*/
@@ -652,6 +703,7 @@ a {
 .product-img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .products-title {
@@ -733,6 +785,7 @@ a {
 
 @media (min-width: 641px) and (max-width: 1199px) {
   .products-wrapper {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -746,10 +799,6 @@ a {
   .products-wrapper {
     display: flex;
     flex-direction: column;
-  }
-
-  .products-article {
-    width: 100%;
   }
 }
 
