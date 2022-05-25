@@ -316,6 +316,10 @@ a {
     display: flex;
     flex-direction: column;
   }
+
+  .trend-item {
+    width: 100%;
+  }
 }
 
 /*=============MAIN NEWS=============*/
