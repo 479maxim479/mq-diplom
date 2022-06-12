@@ -960,12 +960,6 @@ a {
   margin-bottom: 40px;
 }
 
-@media (min-width: 641px) and (max-width: 1199px) {
-}
-
-@media (max-width: 640px) {
-}
-
 /*=============popup============*/
 
 .popup-toggle {
@@ -1115,4 +1109,25 @@ a {
 
 .popup-button:hover {
   background-color: #323232;
+}
+
+@media (max-width: 640px) {
+  .popup-content {
+    width: 80%;
+    max-width: 330px;
+  }
+
+  .popup-select {
+    width: 100%;
+  }
+
+  .popup-question {
+    width: 100%;
+    min-width: 200px;
+    max-width: 325px;
+  }
+
+  .popup-button {
+    width: 100%;
+  }
 }
