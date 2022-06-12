@@ -322,7 +322,7 @@ a {
   }
 
   .trend-item {
-    width: calc(100% / 4 - 4px);
+    width: 25%;
   }
 }
 
@@ -906,9 +906,6 @@ a {
 
   .products-article {
     width: 100%;
-  }
-
-  .product {
   }
 
   .product-img {
