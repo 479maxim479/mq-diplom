@@ -340,6 +340,15 @@ a {
     padding: 15px;
   }
 
+  .trend-wrapper-title {
+    font-size: 13px;
+  }
+
+  .trend-list-link {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
   .trend-item {
     width: calc(100% / 2 - 4px);
   }
@@ -979,6 +988,7 @@ a {
   background-color: rgba(0, 0, 0, 0.6);
   top: 0;
   left: 0;
+  display: flex;
   display: none;
   justify-content: center;
   align-items: center;
@@ -1115,7 +1125,17 @@ a {
   background-color: #323232;
 }
 
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+  .popup {
+    overflow-y: auto;
+  }
+}
+
 @media (max-width: 640px) {
+  .popup {
+    overflow-y: auto;
+  }
+
   .popup-content {
     width: 80%;
     max-width: 330px;
